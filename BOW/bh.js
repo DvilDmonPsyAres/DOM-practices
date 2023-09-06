@@ -4,14 +4,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const winNav = window.navigator;
   const winScreen = window.screen;
   const winLoc = window.location;
-  const history = window.history
+  const history = navigator.history
 
-  console.log('history coming: ', history);
+
   console.log('winndow: ', win);
   console.log('winndow Navigator: ', winNav);
   console.log('winndow Screen: ', winScreen);
   console.log('winndow Location: ', winLoc);
-
+  console.log('history coming: ', history);
 
   navigator.geolocation.getCurrentPosition(function(position) {
     // Handle the position data here
