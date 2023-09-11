@@ -1,0 +1,58 @@
+/* Your code here */
+.players-div-remove{
+  display: none;
+}
+
+.select_players {
+  display: none;
+}
+
+.tables-appear{
+  border: 1px solid gray;
+  display: none;
+}
+
+.battleship__title{
+  text-align: center;
+}
+.battleship__grid{
+  margin: 1rem;
+  display: flex;
+}
+
+.battle__ship-row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.battle__ship-area{
+  width: 25px;
+  height: 25px;
+  border: 1px solid black;
+  margin: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#cordinate{
+  border: none;
+  text-align: center;
+}
+
+.youWin {
+  display: none;
+}
+
+#youWin{
+  text-align: center;
+}
+
+.reset-div{
+  display: none;
+}
+#reset-div{
+  text-align: center;
+}

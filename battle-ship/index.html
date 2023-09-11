@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battleship</title>
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <script type="module" src="./assets/js/index.js"></script>
+</head>
+
+<body>
+   <div id="battleship__grid">
+    <h1 class="battleship__title">Battleship</h1>
+    <div id="select-players-div">
+    <h2> Select Number of Players</h2>
+      <div class="btn1">  <button class="one-player" data-btn_id="onePlayer">One Player</button></div>
+        <div class="btn2"><button class="two-player" data-btn_id="twoPlayer">Two Player</button></div>
+        <div class="btnPc"><button class="cp-player" data-btn_id="vsPlayer">Versus Computer</button></div>
+    </div>
+
+
+        <div class="youWin" id="youWin">YOU WIN!</div>
+        <div class="reset-div" id="reset-div"><button class="reset" id="reset">Reset Game</button></div>
+        <div id="table__boards" class="tables-appear">
+            <div id="row__cordinates" class="battle__ship-row">
+                <div id="cordinate" class="battle__ship-area"></div>
+                <div id="cordinate" class="battle__ship-area">A</div>
+                <div id="cordinate" class="battle__ship-area">B</div>
+                <div id="cordinate" class="battle__ship-area">C</div>
+                <div id="cordinate" class="battle__ship-area">D</div>
+                <div id="cordinate" class="battle__ship-area">E</div>
+                <div id="cordinate" class="battle__ship-area">F</div>
+                <div id="cordinate" class="battle__ship-area">G</div>
+                <div id="cordinate" class="battle__ship-area">H</div>
+                <div id="cordinate" class="battle__ship-area">I</div>
+            </div>
+            <div id="row__0" class="battle__ship-row">
+                <div id="cordinate" class="battle__ship-area">0</div>
+                <div id="00" data-row="0" data-col="A" class="battle__ship-area"></div>
+                <div id="01" data-row="0" data-col="B" class="battle__ship-area"></div>
+                <div id="02" data-row="0" data-col="C" class="battle__ship-area"></div>
+                <div id="03" data-row="0" data-col="D" class="battle__ship-area"></div>
+                <div id="04" data-row="0" data-col="E" class="battle__ship-area"></div>
+                <div id="05" data-row="0" data-col="F" class="battle__ship-area"></div>
+                <div id="06" data-row="0" data-col="G" class="battle__ship-area"></div>
+                <div id="0" data-row="0" data-col="H" class="battle__ship-area"></div>
+                <div id="0" data-row="0" data-col="I" class="battle__ship-area"></div>
+            </div>
+            <div id="row__1" class="battle__ship-row">
+                <div id="cordinate" class="battle__ship-area">1</div>
+                <div id="0" data-row="1" data-col="A" class="battle__ship-area"></div>
+                <div id="0" data-row="1" data-col="B" class="battle__ship-area"></div>
+                <div id="0" data-row="1" data-col="C" class="battle__ship-area"></div>
+                <div id="0" data-row="1" data-col="D" class="battle__ship-area"></div>
+                <div id="0" data-row="1" data-col="E" class="battle__ship-area"></div>
+                <div id="0" data-row="1" data-col="F" class="battle__ship-area"></div>
+                <div id="0" data-row="1" data-col="G" class="battle__ship-area"></div>
+                <div id="0" data-row="1" data-col="H" class="battle__ship-area"></div>
+                <div id="0" data-row="1" data-col="I" class="battle__ship-area"></div>
+            </div>
+            <div id="row__2" class="battle__ship-row">
+                <div id="cordinate" class="battle__ship-area">2</div>
+                <div id="0" data-row="2" data-col="A" class="battle__ship-area"></div>
+                <div id="0" data-row="2" data-col="B" class="battle__ship-area"></div>
+                <div id="0" data-row="2" data-col="C" class="battle__ship-area"></div>
+                <div id="0" data-row="2" data-col="D" class="battle__ship-area"></div>
+                <div id="0" data-row="2" data-col="E" class="battle__ship-area"></div>
+                <div id="0" data-row="2" data-col="F" class="battle__ship-area"></div>
+                <div id="0" data-row="2" data-col="G" class="battle__ship-area"></div>
+                <div id="0" data-row="2" data-col="H" class="battle__ship-area"></div>
+                <div id="0" data-row="2" data-col="I" class="battle__ship-area"></div>
+            </div>
+            <div id="row__3" class="battle__ship-row">
+                <div id="cordinate" class="battle__ship-area">3</div>
+                <div id="0" data-row="3" data-col="A" class="battle__ship-area"></div>
+                <div id="0" data-row="3" data-col="B" class="battle__ship-area"></div>
+                <div id="0" data-row="3" data-col="C" class="battle__ship-area"></div>
+                <div id="0" data-row="3" data-col="D" class="battle__ship-area"></div>
+                <div id="0" data-row="3" data-col="E" class="battle__ship-area"></div>
+                <div id="0" data-row="3" data-col="F" class="battle__ship-area"></div>
+                <div id="0" data-row="3" data-col="G" class="battle__ship-area"></div>
+                <div id="0" data-row="3" data-col="H" class="battle__ship-area"></div>
+                <div id="0" data-row="3" data-col="I" class="battle__ship-area"></div>
+            </div>
+            <div id="row__4" class="battle__ship-row">
+                <div id="cordinate" class="battle__ship-area">4</div>
+                <div id="0" data-row="4" data-col="A" class="battle__ship-area"></div>
+                <div id="0" data-row="4" data-col="B" class="battle__ship-area"></div>
+                <div id="0" data-row="4" data-col="C" class="battle__ship-area"></div>
+                <div id="0" data-row="4" data-col="D" class="battle__ship-area"></div>
+                <div id="0" data-row="4" data-col="E" class="battle__ship-area"></div>
+                <div id="0" data-row="4" data-col="F" class="battle__ship-area"></div>
+                <div id="0" data-row="4" data-col="G" class="battle__ship-area"></div>
+                <div id="0" data-row="4" data-col="H" class="battle__ship-area"></div>
+                <div id="0" data-row="4" data-col="I" class="battle__ship-area"></div>
+            </div>
+            <div id="row__5" class="battle__ship-row">
+                <div id="cordinate" class="battle__ship-area">5</div>
+                <div id="0" data-row="5" data-col="A" class="battle__ship-area"></div>
+                <div id="0" data-row="5" data-col="B" class="battle__ship-area"></div>
+                <div id="0" data-row="5" data-col="C" class="battle__ship-area"></div>
+                <div id="0" data-row="5" data-col="D" class="battle__ship-area"></div>
+                <div id="0" data-row="5" data-col="E" class="battle__ship-area"></div>
+                <div id="0" data-row="5" data-col="F" class="battle__ship-area"></div>
+                <div id="0" data-row="5" data-col="G" class="battle__ship-area"></div>
+                <div id="0" data-row="5" data-col="H" class="battle__ship-area"></div>
+                <div id="0" data-row="5" data-col="I" class="battle__ship-area"></div>
+            </div>
+            <div id="row__6" class="battle__ship-row">
+                <div id="cordinate" class="battle__ship-area">6</div>
+                <div id="0" data-row="6" data-col="A" class="battle__ship-area"></div>
+                <div id="0" data-row="6" data-col="B" class="battle__ship-area"></div>
+                <div id="0" data-row="6" data-col="C" class="battle__ship-area"></div>
+                <div id="0" data-row="6" data-col="D" class="battle__ship-area"></div>
+                <div id="0" data-row="6" data-col="E" class="battle__ship-area"></div>
+                <div id="0" data-row="6" data-col="F" class="battle__ship-area"></div>
+                <div id="0" data-row="6" data-col="G" class="battle__ship-area"></div>
+                <div id="0" data-row="6" data-col="H" class="battle__ship-area"></div>
+                <div id="0" data-row="6" data-col="I" class="battle__ship-area"></div>
+            </div>
+            <div id="row__7" class="battle__ship-row">
+                <div id="cordinate" class="battle__ship-area">7</div>
+                <div id="0" data-row="7" data-col="A" class="battle__ship-area"></div>
+                <div id="0" data-row="7" data-col="B" class="battle__ship-area"></div>
+                <div id="0" data-row="7" data-col="C" class="battle__ship-area"></div>
+                <div id="0" data-row="7" data-col="D" class="battle__ship-area"></div>
+                <div id="0" data-row="7" data-col="E" class="battle__ship-area"></div>
+                <div id="0" data-row="7" data-col="F" class="battle__ship-area"></div>
+                <div id="0" data-row="7" data-col="G" class="battle__ship-area"></div>
+                <div id="0" data-row="7" data-col="H" class="battle__ship-area"></div>
+                <div id="0" data-row="7" data-col="I" class="battle__ship-area"></div>
+            </div>
+            <div id="row__8" class="battle__ship-row">
+                <div id="cordinate" class="battle__ship-area">8</div>
+                <div id="0" data-row="8" data-col="A" class="battle__ship-area"></div>
+                <div id="0" data-row="8" data-col="B" class="battle__ship-area"></div>
+                <div id="0" data-row="8" data-col="C" class="battle__ship-area"></div>
+                <div id="0" data-row="8" data-col="D" class="battle__ship-area"></div>
+                <div id="0" data-row="8" data-col="E" class="battle__ship-area"></div>
+                <div id="0" data-row="8" data-col="F" class="battle__ship-area"></div>
+                <div id="0" data-row="8" data-col="G" class="battle__ship-area"></div>
+                <div id="0" data-row="8" data-col="H" class="battle__ship-area"></div>
+                <div id="0" data-row="8" data-col="I" class="battle__ship-area"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

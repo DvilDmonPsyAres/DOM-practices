@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <ul id="dogs"></ul>
+</body>
+<script>
+    const DOGS = {
+    101: {
+      id: 101,
+      name: "Sable",
+      genus: "Husky Huskius"
+    },
+
+    234: {
+      id: 234,
+      name: "Blixa",
+      genus: "Corgi Corgiorum"
+    }
+  };
+
+  // // Fill dogsUl with list items; one per dog.
+  // const dogUl = document.getElementById("dogs");
+  // Object.keys(DOGS).forEach( id => {
+  //   const dog = DOGS[id];
+
+  //   const dogLi = document.createElement("li");
+  //   dogLi.innerText = dog.name + " -- " + dog.genus;
+
+  //   // store the dog's id in a **data-* attribute**
+  //   dogLi.setAttribute("data-id", dog.id);
+
+  //   dogUl.append(dogLi);
+
+  // });
+
+  const dogUl = document.getElementById("dogs");
+    Object.keys(DOGS).forEach( id => {
+        const dog = DOGS[id];
+
+        const dogLi = document.createElement("li");
+        dogLi.innerText = dog.name + " -- " + dog.genus;
+
+        // store the dog's id in a **data-* attribute**
+        dogLi.setAttribute("data-id", dog.id);
+
+        // add event listener to alert the dogs id
+        dogLi.addEventListener("click", e => {
+            const dog = e.target;
+            alert(`Dog #${dog.dataset.id} loves you!`);
+        });
+
+        dogUl.append(dogLi);
+    });
+    // const sable = document.querySelector('li[data-id="101"]');
+    // delete sable.dataset.id;
+</script>
+</html>
