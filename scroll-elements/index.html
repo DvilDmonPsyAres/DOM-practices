@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link rel="stylesheet" href="./style.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Imotechnologics</title>
+    </head>
+    <body>
+<section>
+  <h1>reveal elements on scrool</h1>
+</section>
+<section>
+  <div class="container reveal">
+    <h2>Your Title</h2>
+    <div class="cards">
+      <div class="text-cards">
+        <h3>title</h3>
+        <p>DESCRIPTION:
+          Hello! I'm Alan Garza SEO of Imotechnologics, a passionate and results-driven software engineer with a strong background in creating innovative web solutions. With a diverse skill set spanning from front-end technologies like React and JavaScript to back-end frameworks such as Django and Flask, I thrive in building robust and user-centric applications.
+        </p>
+      </div>
+      <div class="text-cards">
+        <h3>title</h3>
+        <p>DESCRIPTION:
+          Hello! I'm Alan Garza SEO of Imotechnologics, a passionate and results-driven software engineer with a strong background in creating innovative web solutions. With a diverse skill set spanning from front-end technologies like React and JavaScript to back-end frameworks such as Django and Flask, I thrive in building robust and user-centric applications.
+        </p>
+      </div>
+      <div class="text-cards">
+        <h3>title</h3>
+        <p>DESCRIPTION:
+          Hello! I'm Alan Garza SEO of Imotechnologics, a passionate and results-driven software engineer with a strong background in creating innovative web solutions. With a diverse skill set spanning from front-end technologies like React and JavaScript to back-end frameworks such as Django and Flask, I thrive in building robust and user-centric applications.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container reveal">
+    <h2>Your Title</h2>
+    <div class="cards">
+      <div class="text-cards">
+        <h3>title</h3>
+        <p>DESCRIPTION:
+          Hello! I'm Alan Garza SEO of Imotechnologics, a passionate and results-driven software engineer with a strong background in creating innovative web solutions. With a diverse skill set spanning from front-end technologies like React and JavaScript to back-end frameworks such as Django and Flask, I thrive in building robust and user-centric applications.
+        </p>
+      </div>
+      <div class="text-cards">
+        <h3>title</h3>
+        <p>DESCRIPTION:
+          Hello! I'm Alan Garza SEO of Imotechnologics, a passionate and results-driven software engineer with a strong background in creating innovative web solutions. With a diverse skill set spanning from front-end technologies like React and JavaScript to back-end frameworks such as Django and Flask, I thrive in building robust and user-centric applications.
+        </p>
+      </div>
+      <div class="text-cards">
+        <h3>title</h3>
+        <p>DESCRIPTION:
+          Hello! I'm Alan Garza SEO of Imotechnologics, a passionate and results-driven software engineer with a strong background in creating innovative web solutions. With a diverse skill set spanning from front-end technologies like React and JavaScript to back-end frameworks such as Django and Flask, I thrive in building robust and user-centric applications.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container reveal">
+    <h2>Your Title</h2>
+    <div class="cards">
+      <div class="text-cards">
+        <h3>title</h3>
+        <p>DESCRIPTION:
+          Hello! I'm Alan Garza SEO of Imotechnologics, a passionate and results-driven software engineer with a strong background in creating innovative web solutions. With a diverse skill set spanning from front-end technologies like React and JavaScript to back-end frameworks such as Django and Flask, I thrive in building robust and user-centric applications.
+        </p>
+      </div>
+      <div class="text-cards">
+        <h3>title</h3>
+        <p>DESCRIPTION:
+          Hello! I'm Alan Garza SEO of Imotechnologics, a passionate and results-driven software engineer with a strong background in creating innovative web solutions. With a diverse skill set spanning from front-end technologies like React and JavaScript to back-end frameworks such as Django and Flask, I thrive in building robust and user-centric applications.
+        </p>
+      </div>
+      <div class="text-cards">
+        <h3>title</h3>
+        <p>DESCRIPTION:
+          Hello! I'm Alan Garza SEO of Imotechnologics, a passionate and results-driven software engineer with a strong background in creating innovative web solutions. With a diverse skill set spanning from front-end technologies like React and JavaScript to back-end frameworks such as Django and Flask, I thrive in building robust and user-centric applications.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<script type="text/javascript">
+  window.addEventListener('scroll', reveal);
+
+  function reveal(){
+    const reveals = document.querySelectorAll('.reveal')
+
+    for(let i = 0; i < reveals.length; i++) {
+      const windowHeight = window.innerHeight;
+      let revealtop = reveals[i].getBoundingClientRect().top;
+      let revealpoint = 150;
+
+      if(revealtop < windowHeight - revealpoint) {
+        reveals[i].classList.add('active');
+      } else{
+        reveals[i].classList.remove('active');
+      }
+    }
+  }
+</script>
+    </body>
+</html>

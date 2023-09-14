@@ -1,0 +1,72 @@
+#winner__sec{
+  text-align: center;
+}
+#tictactoe{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 225px;
+  max-height: 225px;
+  padding: 3rem 30%;
+
+}
+
+.row{
+  display: flex;
+}
+.row-border{
+  border-bottom: 3px solid black;
+}
+.table-square{
+  width: 75px;
+  height: 75px;
+}
+.col-border{
+ border-right: 3px solid black;
+}
+
+.game-btns {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* .circle {
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: transform 0.3s, opacity 0.3s, width 0.3s, height 0.3s;
+  opacity: 0;
+} */
+.circle {
+  width: 40px;
+  height: 40px;
+
+  border: 7px solid rgb(146, 100, 255);
+  border-radius: 50%;
+  position: absolute;
+  transform-origin: center center;
+  transform: scale(0); /* Initial scale to 0 for the grow effect */
+  pointer-events: none;
+  transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out;
+  opacity: 1; /* Initial opacity to 1 */
+}
+
+/* .circle2 {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  transform-origin: center center;
+  transform: scale(0);
+
+  pointer-events: none;
+  transition: transform 0.3s ease-in-out, opacity 0.4s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out;
+  opacity: 1;
+}
+*/

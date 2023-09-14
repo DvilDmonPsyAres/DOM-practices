@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="./main.css">
+  <script src="./tic-tac-toe.js"></script>
+</head>
+
+<body>
+  <!-- HTML structure for the UI: -->
+  <!-- Your code here -->
+  <div id="winner__sec"></div>
+  <div id="tictactoe">
+    <div id="row0" class="row row-border">
+      <div id="square00" class="table-square col-border" data-row="0" data-col="0"></div>
+      <div id="square01" class="table-square col-border" data-row="0" data-col="1"></div>
+      <div id="square02" class="table-square " data-row="0" data-col="2"></div>
+    </div>
+    <div id="row1" class="row row-border">
+      <div id="square10" class="table-square col-border" data-row="1" data-col="0"></div>
+      <div id="square11" class="table-square col-border" data-row="1" data-col="1"></div>
+      <div id="square12" class="table-square " data-row="1" data-col="2"></div>
+    </div>
+    <div id="row2" class="row">
+      <div id="square20" class="table-square col-border" data-row="2" data-col="0"></div>
+      <div id="square21" class="table-square col-border" data-row="2" data-col="1"></div>
+      <div id="square22" class="table-square" data-row="2" data-col="2"></div>
+    </div>
+  </div>
+  <div class="game-btns">
+    <button id="new-game">New Game</button>
+    <button id="give-up" disabled>Give Up</button>
+  </div>
+</body>
+
+</html>
